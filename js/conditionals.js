@@ -84,7 +84,7 @@ console.log(analyzeColor("green"))
  * function to show it to the user.
  */
 
-let usersColor = prompt("What is your favorite color?")
+let usersColor = prompt("What is your favorite color?").toLowerCase();
 
 alert(analyzeColor(usersColor))
 
@@ -193,7 +193,7 @@ if (confirm("Would you like to enter a number?")) {
             alert("Your number is negative");
         }
     } else {
-        alert("Invalid input. Please enter a valid number.");
+        alert("That wasn't a number, please input a valid number.");
     }
 }
 
