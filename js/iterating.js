@@ -69,10 +69,17 @@
     function second(input) {
         return input[1]
     }
-    function last(input) {
-        return input[3]
-    }
+    // function last(input) {
+    //     return input[3]
+    // }
 
+
+    function last(input){
+        let sum = (input.length - 1 )
+         return input[sum]
+
+    }
+// this function gives last index of any array rather than the one I commented out
 
 
     console.log(first(names))
