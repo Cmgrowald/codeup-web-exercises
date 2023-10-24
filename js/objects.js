@@ -27,10 +27,11 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-person.sayHello = "Hello from " + person.firstName + " " + person.lastName + "!"
+person.sayHello = function () {
+  return  ("Hello from " + this.firstName + " " + person.lastName + "!")
+};
 
-
-    console.log(person.sayHello)
+    console.log(person.sayHello())
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
