@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+<header>
+    <h1>Veridian Dynamics.</h1>
+</header>
+<form method="POST" action="https://request-inspector.glitch.me/">
+<!--email password bio section-->
+    <label for="textSample">User Email</label>
+<input type="text" name="email"  placeholder="Enter Email Here">
+
+<label for="textSample">User Password</label>
+<input type="password" name="password" placeholder="Enter Password Here"
+
+<label for="bioSample">User Bio</label>
+<textarea name="bio" id="bioSample" cols="30" rows="10"></textarea>
+
+<!--Heard about radio buttons-->
+    <h3>How did you hear about us?</h3>
+    <input type="radio" id="heardabout1" name="heardaboutquestion" value="billboard"><label for="heardabout1">Billboard</label><br>
+    <input type="radio" id="heardabout2" name="heardaboutquestion" value="Radio"><label for="heardabout2">Radio Advertisement</label><br>
+    <input type="radio" id="heardabout3" name="heardaboutquestion" value="Internet"><label for="heardabout3">Internet Advertisement</label><br>
+    <input type="radio" id="heardabout4" name="heardaboutquestion" value="other"><label for="heardabout4">Other</label><br>
+
+<!--dropdown menu for browsers-->
+    <label for="browserSelect">What browser are you currently using?</label>
+    <select name="userBrowser" id="browserSelect">
+    <option value="Chrome">Chrome</option>
+    <option value="Safari">Safari</option>
+    <option value="OperaGX">OperaGX</option>
+    <option value="FireFox">FireFox</option>
+    </select>
+
+
+    <input type="submit">
+</form>
+</body>
+</html>
