@@ -3,6 +3,6 @@ h1 {
     text-decoration: underline;
 }
 
-/*after creating the embedded style sheet it changed the h1 back to black*/
-/*after linking this css file the h1 remained black until I removed the embedded stylesheet after it turned purple*/
-/*embedded takes precedence over external*/
+/*after creating the embedded style sheet it stayed red*/
+/*after linking this css file the h1 remained blue until I removed the embedded stylesheet after it turned purple*/
+/*embedded external really come sdown to what comes first*/
