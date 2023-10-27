@@ -1,0 +1,8 @@
+h1 {
+    color: purple;
+    text-decoration: underline;
+}
+
+/*after creating the embedded style sheet it changed the h1 back to black*/
+/*after linking this css file the h1 remained black until I removed the embedded stylesheet after it turned purple*/
+/*embedded takes precedence over external*/
