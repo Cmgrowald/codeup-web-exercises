@@ -1,7 +1,133 @@
-h1 {
-    color: purple;
-    text-decoration: underline;
+* {
+    font-family: "Adelle Sans Devanagari" , sans-serif;
 }
+
+hr {
+    height: 4px;
+    background-color: steelblue;
+    border: none;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+
+h1, h2 {
+    color: steelblue;
+    text-decoration: underline;
+
+}
+
+.centered{
+    text-align: center;
+}
+
+.table-centered {
+    display: flex;
+    align-items: center;
+ justify-content: center;
+}
+
+html {
+    /*background: antiquewhite;*/
+    background-image: url("../media/tech.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ol {
+   list-style-type: none;
+    background-color:rgba(70,130,180, .4);
+    border: 1px solid black;
+}
+ol:hover {
+    font-size: 32px;
+}
+
+ul:hover {
+    font-size: 32px;
+}
+
+
+ul {
+    list-style-type: georgian;
+    padding-left: 20px;
+    margin: 0;
+    background-color:rgba(70,130,180, .4);
+    border: 1px solid black;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    font-size: 16px;
+    background-color:rgba(70,130,180, .4);
+}
+
+tr {
+    padding: 15px;
+    border: 1px solid black;
+    background-color:rgba(70,130,180, .4);
+}
+
+a {
+    transition: .5s;
+
+}
+
+a:link {
+    color: steelblue;
+}
+ a:visited {
+     color: crimson;
+ }
+
+ a:hover {
+     font-size: 32px;
+ }
+
+ #img {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ hr {
+
+     color: rgb(82,82,82);
+ }
+
+ .img {
+     height: 50px;
+ }
+
+ em, ul, ol, b {
+     color: red;
+ }
+
+
+
+
+
+
+
+
 
 /*after creating the embedded style sheet it stayed red*/
 /*after linking this css file the h1 remained blue until I removed the embedded stylesheet after it turned purple*/
