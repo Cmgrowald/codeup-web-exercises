@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body id="background">
+<h1 id="main-header">Konami Code</h1>
+<main id="main-content"></main>
+<script>
+    "use strict";
+   // array for konami code
+    const konamiCode = [
+        'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
+        'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
+        'b', 'a', 'Enter'
+    ];
+    // konami code
+    let konamiIndex = 0;
+    // id's
+    let background = document.getElementById("background")
+    let mainHeader = document.getElementById("main-header")
+    let mainContent = document.getElementById("main-content")
+    // variable to make images show on the page
+    const image = document.createElement("img");
+    const createParagraph = document.createElement('p')
+    // main exercise code
+    document.addEventListener("keyup", event => {
+        if (event.key.toLowerCase() === konamiCode[konamiIndex].toLowerCase()) {
+            konamiIndex++;
+            if (konamiIndex === konamiCode.length) {
+                background.style.backgroundColor = "limegreen"
+                mainHeader.innerHTML = "Cheaters Never prosper"
+                alert("You have added 30 lives!");
+                image.src = "images/elmo-fire.gif";
+                document.body.appendChild(image);
+                mainContent.innerText = "The Konami Code (Japanese: コナミコマンド, Konami Komando, \"Konami command\"), also commonly referred to as the Contra Code and sometimes the 30 Lives code, is a cheat code that appears in many Konami video games,[1] as well as some non-Konami games.[2] In the original code, the player has to press the following sequence of buttons on the game controller to enable a cheat or other effects"
+                konamiIndex = 0
+            }
+        } else {
+            konamiIndex = 0
+        }
+    });
+  // to monitor key press events
+    document.addEventListener("keyup", event => {
+        console.log(event)
+    })
+
+    document.addEventListener("keydown", event => {
+        // Check if the key pressed is the 'A' key
+        if (event.key === 'ArrowLeft') {
+            // Create an image element
+
+            // Image that appears
+            image.src = "images/left-arrow.png";
+            // appends the image to specified element/container
+            document.body.appendChild(image);
+// right arrow img
+    } else if (event.key === 'ArrowRight') {
+        image.src = "images/right-arrow.png";
+        document.body.appendChild(image);
+// up arrow img
+        } else if (event.key === 'ArrowUp') {
+            image.src = "images/up-arrow.png";
+            document.body.appendChild(image);
+// down arrow img
+        } else if (event.key === 'ArrowDown') {
+            image.src = "images/down-arrow.png";
+            document.body.appendChild(image);
+// a button img
+        } else if (event.key === 'a') {
+            image.src = "images/A-button.png";
+            document.body.appendChild(image);
+// b button img
+        } else if (event.key === 'b') {
+            image.src = "images/B-button.png";
+            document.body.appendChild(image);
+// start button img
+        }else { (event.key === 'enter')
+            image.src = "images/start-button.png";
+            document.body.appendChild(image);
+
+        }
+
+    });
+
+ // to remove images after key press
+    document.addEventListener("keyup", event => {
+        // removes images after key is pressed
+        const images = document.querySelectorAll("img");
+        images.forEach(image => image.remove());
+    });
+
+
+
+</script>
+</body>
+</html>
