@@ -17,7 +17,7 @@
                 <h3><label class="form-label" for="to-do">Enter to-do:</label></h3>
                 <input class="form-control" type="text" name="to-do" id="to-do">
                 <div class="d-grid">
-                    <button class="btn btn-secondary mt-3 add">Add To-Do</button>
+                    <button class="button btn-secondary mt-3 add">Add To-Do</button>
                 </div>
             </form>
         </section>
@@ -26,7 +26,7 @@
             <ul class="list-group" id="to-do-list">
                 <li class="to-do-item list-group-item d-flex justify-content-between align-items-center">
                     <p class="m-0">Finish this exercise</p>
-                    <button class="btn btn-danger">Done</button>
+                    <button class="button btn-danger">Done</button>
                 </li>
             </ul>
         </section>
@@ -60,7 +60,7 @@
                 p.setAttribute('class', "m=0")
                 p.appendChild(todo)
                 li.appendChild(done)
-                done.setAttribute('class', "btn btn-success")
+                done.setAttribute('class', "button")
                 done.setAttribute('id', `done-${index}`)
                 done.addEventListener('click', removeItem, {once:true})
                 done.appendChild(buttonDone)
