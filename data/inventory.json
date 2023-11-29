@@ -1,0 +1,152 @@
+[
+    {
+        "title": "Hammer",
+        "quantity": 25,
+        "categories": ["tool"],
+        "price": 20
+    },
+    {
+        "title": "Drill",
+        "quantity": 5,
+        "categories": ["tool", "powered"],
+        "price": 100
+    },
+    {
+        "title": "Mower",
+        "quantity": 5,
+        "categories": ["tool", "gas", "outdoor"],
+        "price": 200
+    },
+    {
+        "title": "Screwdrivers",
+        "quantity": 25,
+        "categories": ["tool"],
+        "price": 10
+    },
+    {
+        "title": "Wrench Set",
+        "quantity": 15,
+        "categories": ["hand tool"],
+        "price": 45
+    },
+    {
+        "title": "Power Drill",
+        "quantity": 10,
+        "categories": ["power tool"],
+        "price": 90
+    },
+    {
+        "title": "Screwdriver Kit",
+        "quantity": 20,
+        "categories": ["hand tool"],
+        "price": 30
+    },
+    {
+        "title": "Circular Saw",
+        "quantity": 8,
+        "categories": ["power tool"],
+        "price": 120
+    },
+    {
+        "title": "Hammer Drill",
+        "quantity": 12,
+        "categories": ["power tool"],
+        "price": 110
+    },
+    {
+        "title": "Adjustable Wrench",
+        "quantity": 18,
+        "categories": ["hand tool"],
+        "price": 25
+    },
+    {
+        "title": "Jigsaw",
+        "quantity": 9,
+        "categories": ["power tool"],
+        "price": 95
+    },
+    {
+        "title": "Utility Knife",
+        "quantity": 25,
+        "categories": ["hand tool"],
+        "price": 15
+    },
+    {
+        "title": "Angle Grinder",
+        "quantity": 7,
+        "categories": ["power tool"],
+        "price": 140
+    },
+    {
+        "title": "Chainsaw",
+        "quantity": 5,
+        "categories": ["power tool", "outdoor"],
+        "price": 250
+    },
+    {
+        "title": "Tape Measure",
+        "quantity": 30,
+        "categories": ["hand tool"],
+        "price": 12
+    },
+    {
+        "title": "Pliers Set",
+        "quantity": 16,
+        "categories": ["hand tool"],
+        "price": 35
+    },
+    {
+        "title": "Router",
+        "quantity": 6,
+        "categories": ["power tool"],
+        "price": 180
+    },
+    {
+        "title": "Sledgehammer",
+        "quantity": 10,
+        "categories": ["hand tool"],
+        "price": 50
+    },
+    {
+        "title": "Air Compressor",
+        "quantity": 4,
+        "categories": ["power tool"],
+        "price": 300
+    },
+    {
+        "title": "Allen Wrench Set",
+        "quantity": 20,
+        "categories": ["hand tool"],
+        "price": 18
+    },
+    {
+        "title": "Heat Gun",
+        "quantity": 8,
+        "categories": ["power tool"],
+        "price": 70
+    },
+    {
+        "title": "Cordless Screwdriver",
+        "quantity": 15,
+        "categories": ["hand tool"],
+        "price": 40
+    },
+    {
+        "title": "Belt Sander",
+        "quantity": 6,
+        "categories": ["power tool"],
+        "price": 160
+    },
+    {
+        "title": "Claw Hammer",
+        "quantity": 22,
+        "categories": ["hand tool"],
+        "price": 20
+    },
+    {
+        "title": "Dremel Rotary Tool",
+        "quantity": 11,
+        "categories": ["power tool"],
+        "price": 75
+    }
+]
