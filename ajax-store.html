@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+    <link rel="stylesheet" href="css/ajax-store.css">
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+
+<script>
+    "use strict";
+
+    // TODO: Create an AJAX GET request for the file under data/inventory.json
+    fetch("data/inventory.json").then(resp => resp.json()).then(data => {
+        console.log(data)
+        // TODO: Take the data from inventory.json and append it to the products table
+        //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+        //             its contents and fields
+        //       HINT: You will want to target #insertProducts for your new HTML elements
+
+        data.forEach(product => {
+            const tr = document.createElement('tr')
+
+
+        const titleTd = document.createElement('td')
+        const quantityTd = document.createElement('td')
+        const priceTd = document.createElement('td')
+        const categoriesTd = document.createElement('td')
+
+        titleTd.innerText = product.title;
+        quantityTd.innerText = product.quantity;
+        priceTd.innerText = product.price;
+        categoriesTd.innerText = product.categories.join(', ');
+
+        tr.appendChild(titleTd);
+        tr.appendChild(quantityTd);
+        tr.appendChild(priceTd);
+        tr.appendChild(categoriesTd);
+
+
+        document.querySelector('#insertProducts').appendChild(tr);
+        })
+    })
+</script>
+
+</body>
+</html>
