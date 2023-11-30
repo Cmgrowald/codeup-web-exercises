@@ -1,7 +1,16 @@
 "use strict";
 
-    function getLastCommit(username, repository) {
-        const lastCommitEvent = fetch(`https://api.github.com/repos/${username}/${repository}` , {headers: {'Authorization': `GH_KEY ${GH_KEY}`}}).then(response => response.json()).then(data => console.log(data.pushed_at))
-        return lastCommitEvent
-    }
+function getLastCommit(username, key) {
+    return fetch(`https://api.github.com/users/${username}/events/public`, { headers: { 'Authorization': `token ${key}` } })
+        .then(response => response.json())
+        .then(data => {
+            const lastCommit = data.find(event => event.type === 'PushEvent');
+            return lastCommit ? lastCommit.created_at : 'No commit found.';
+        })
 
+}
+
+getLastCommit('cmgrowald', GH_KEY)
+    .then(lastCommitDate => {
+        console.log('Last commit date:', lastCommitDate);
+    });
