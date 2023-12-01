@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox maps API</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/mapbox_maps_api.css">
+</head>
+<body>
+
+
+<div id='map' style='width: 80vw; height: 100vh;'></div>
+<script src="js/keys.js"></script>
+<script src="js/mapbox_maps_api.js"></script>
+<script>
+    mapboxgl.accessToken = MB_KEY;
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-97.3308, 32.7555], // starting position [lng, lat]
+        zoom: 12, // starting zoom
+    });
+
+
+    fetch("data/addresses.json")
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(item => {
+                const address = item.address;
+                geocode(address, MB_KEY).then(coords => {
+                    // marker
+                    const marker = new mapboxgl.Marker()
+                        .setLngLat(coords)
+                        .addTo(map);
+                     // popup opens when marker is clicked
+                    const Popup = new mapboxgl.Popup()
+                        .setHTML(`<h1>${item.name}</h1><p>${item.description}</p><img src=${item.image} alt="restaurant image">`)
+                    marker.setPopup(Popup);
+                })
+            })
+        })
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+</script>
+</body>
+</html>

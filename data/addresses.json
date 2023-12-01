@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Benito`s restaurant",
+    "address": "1450 W Magnolia Ave, Fort Worth, TX 76104",
+    "description": "Benito’s Restaurant is a local favorite that is a popular part of the revitalized Fairmount area in the hospital district of Fort Worth.",
+    "image": "images/benitos.png"
+  },
+  {
+    "name": "Heim Barbecue",
+    "address": "1109 W Magnolia Ave, Fort Worth, TX 76104",
+    "description":"From humble beginnings experimenting with family recipes and hosting backyard BBQ parties, the journey of Heim Barbecue evolved into a thriving culinary enterprise with multiple locations, driven by a passionate commitment to delivering exceptional quality BBQ and fostering an inclusive, enjoyable dining experience.",
+    "image": "images/heim.jpeg"
+  },
+  {
+    "name": "Spice",
+    "address": "411 W Magnolia Ave, Fort Worth, TX 76104",
+    "description": "Thai Select has been established as a family owned business in Fort Worth. The first location was opened in 2006.",
+    "image": "images/spice.jpeg"
+  }
+]
