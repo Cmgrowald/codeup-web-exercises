@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Map</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/weather_map.css">
+
+
+</head>
+<body>
+
+<!--NAV BAR-->
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>Channel 10 Weather</h1>
+        </div>
+    </nav>
+</header>
+
+<!--SEARCH FORM-->
+<div class="search-container ">
+    <form id="searchForm" class="d-flex" role="search">
+        <input type="text" id="searchInput" placeholder="Enter address or city name" required>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div>
+
+
+<!-- cards for the 5 day forecast-->
+<div id="weather-container" class=" weather-cards custom-card">
+    <div>
+        Weather Forecast
+    </div>
+    <ul class="list-group ">
+        <li class="list-group-item">Temperature: <span class="fw-bold"></span><span
+                class="fw-bold"></span>
+        </li>
+        <li class="list-group-item">Description:</li>
+        <li class="list-group-item">Humidity:</li>
+        <li class="list-group-item">Wind:</li>
+        <li class="list-group-item">Pressure:</li>
+    </ul>
+</div>
+
+<!--MAP BOX MAP-->
+<div class="map-container">
+    <div id="map"></div>
+    <pre id="coordinates" class="coordinates"></pre>
+</div>
+
+
+<script src="js/keys.js"></script>
+<script src="js/weather_map.js"></script>
+</body>
+</html>
