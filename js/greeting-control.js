@@ -9,6 +9,6 @@ document.getElementById('greetingForm').addEventListener('submit', function (eve
 
     const randomGreeting = getRandomGreeting();
 
-    const greetingDisplay = document.getElementById('greetingDisplay');
-    greetingDisplay.innerHTML = `<p>${randomGreeting}, ${Name}!</p>`;
+    const greeting = document.getElementById('greeting');
+    greeting.innerHTML = `<p>${randomGreeting}, ${Name}!</p>`;
 });
